@@ -24,7 +24,67 @@
         <!--Method GET pasa los datos por la url, atravez de parametros// Method POST pasa los datos de forma interna(no se ven)-->
         <form action="datos.php" method="post"></form>
     </section>
-    
-    
+        <!--Seccion de marco de formulario-->
+        <fieldset>
+        <!--Seccion de ingreso de nombre-->
+        <label>Nombre Completo:</label>
+        <input name="name" type="texo" placeholder="Ingresa el nombre completo" required="">
+        <br><br>
+
+        <!--Seccion email-->
+        <label>E-mail</label>
+        <input name="email" placeholder="Ingrese su Email" required="">
+        <br><br>
+        
+        <!--Seccion contraseña-->
+        <label>Contraseña</label>
+        <input name="contraseña" type="password" placeholder="Ingrese su contraseña" required="">
+        <br><br>
+
+
+            <!--Seccion Hobbies-->
+            <label>Seccion tus hobbies:
+            </label>
+                <br>
+                <inpunt name="cine" type="checkbox">Cine</inpunt>
+                <inpunt name="lectura" type="checkbox">lectura</inpunt>
+                <inpunt name="deporte" type="checkbox">deporte</inpunt>
+            <br>
+
+            <!--Estado civil-->
+        
+            <label>Estado civil</label><br>
+                <input name="estcivil" type="radio" value="casado">casado(a)<b></b>
+                <input name="estcivil" type="radio" value="soltero">soltero(a)<b></b>
+                <input name="estcivil" type="radio" value="viudo">viudo(a)<b></b>
+            <br>
+            <br>
+
+            <!--Seleccionar opcion lista-->
+            <label>PROGRAMAS TECNICOS:</label>
+            <select name="select">
+                <option >Sistemas</option>
+                <option >Seleccione programa...</option>
+                <option >Contabilidad</option>
+                <option >Diseño grafico</option>
+            </select>
+            <br>
+            <br>
+            <label>Tu comentario:</label><br>
+                <textarea name="mensaje" rows="5" cols="40"></textarea>
+            </fieldset>
+            <br><br>
+
+            <!--Seccion de botones formulario submit : enviar datos cancel: borrar datos-->
+            <button typt="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+            <br>
+            <br>
+            </form>
+        </section>
+            <!--Seccion de pie pagina-->
+        <footer>
+            Derechos reservados &copy;2022&#64; NOMBRE  STD
+        </footer>
 </body>
 </html>
