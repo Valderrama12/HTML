@@ -8,7 +8,7 @@
 body {
   font-family: 'Passions Conflict', cursive;
     background-color: var(--fondo);
-    background-image: url(../Html/Imge/cool-background.png)
+    background-image: url(../Html/Imge/cool-background.png);
   }
   
   .navbar-brand {
