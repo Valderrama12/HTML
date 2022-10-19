@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO WHILE</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>BOLETIN NOTAS DE PROGRAMACION</h1>
+        <h3>NOTAS1=DESEMPEÑO; NOTA2= TALLERES; NOTA3=CUESTIONARIOS</h3>
+        <script>
+            let nota_STD, suma, prom;
+            suma=0;//ACUMULADOR DE NOTAS
+            prom=0;// NOTA DEFINITIVA
+            num=1;//CONTADOR DE NOTAS
+            nomb_std=prompt("INGRESE NOMBRE ESTUDIANTE");
+            //PROCESO
+            while (num<=3)
+            {
+                nota_STD=parseFloat(prompt("INGRESE NOTA [1 a 5]:"));
+                suma+=nota_STD;// ACUMULADOR
+                num++;//CONTADOR
+            }
+            prom=suma/3;
+            //validar nota final
+            if(prom>=3.0)
+            {
+                document.write(" Estudiante "+ " "+nomb_std);
+                document.write("<br>"+"<br>");
+                document.write("Nota final de programacion es"          +"  "+ prom.toFixed(2)+"<br>"+"<br>");
+                swal("FELICITACIONES !!"," -- APRUEBA MATERIA PROGRAMACION PAE","success");
+            }
+            else{
+                document.write(" Estudiante "+ " "+nomb_std);
+                document.write("<br>"+"<br>");
+                document.write("Nota final de programacion es"          +"  "+ prom.toFixed(2)+"<br>"+"<br>");
+                swal("ESTUDIANTE","REPRUEBA MATERIA PROGRAMACION PAE","error");
+                }
+
+        </script>
+    </center>
+</body>
+</html>
